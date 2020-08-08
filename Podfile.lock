@@ -1,0 +1,32 @@
+PODS:
+  - FontAwesome.swift (1.9.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+
+DEPENDENCIES:
+  - FontAwesome.swift
+  - IQKeyboardManagerSwift
+  - PromiseKit (~> 6.8)
+
+SPEC REPOS:
+  trunk:
+    - FontAwesome.swift
+    - IQKeyboardManagerSwift
+    - PromiseKit
+
+SPEC CHECKSUMS:
+  FontAwesome.swift: a403b88cec950511745ba8f2decd1b6a07346d13
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+
+PODFILE CHECKSUM: 0374ae9702beb2efd7f4a4b8981ac19cbb9fe37a
+
+COCOAPODS: 1.9.3
