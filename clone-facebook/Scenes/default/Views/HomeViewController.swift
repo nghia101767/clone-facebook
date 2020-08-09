@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class DefaultViewController: UIViewController {
 
     @IBOutlet weak var header: UIView!
     
@@ -17,14 +17,18 @@ class HomeViewController: UIViewController {
     
     weak var pageViewController: UIPageViewController!
     
+    private var viewControllers:[Int:UIViewController] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initViewController()
+    }
+    func initViewController(){
         
     }
-
 }
 
-extension HomeViewController: UIPageViewControllerDataSource{
+extension DefaultViewController: UIPageViewControllerDataSource{
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         return UIViewController()
     }

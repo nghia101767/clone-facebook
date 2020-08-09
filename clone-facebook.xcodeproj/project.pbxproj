@@ -8,8 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		B1D9EC01360E271F17F2B32E /* Pods_clone_facebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E908241E013BF45C3070DB88 /* Pods_clone_facebook.framework */; };
-		D5C51BF024DE93C90073217F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C51BEE24DE93C90073217F /* HomeViewController.swift */; };
-		D5C51BF124DE93C90073217F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C51BEF24DE93C90073217F /* HomeViewController.xib */; };
+		D51E7BE624DF6EAA00C8C5A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7BE424DF6EAA00C8C5A3 /* HomeViewController.swift */; };
+		D51E7BE724DF6EAA00C8C5A3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E7BE524DF6EAA00C8C5A3 /* HomeViewController.xib */; };
+		D51E7BEE24DF6F5B00C8C5A3 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7BEC24DF6F5B00C8C5A3 /* VideoViewController.swift */; };
+		D51E7BEF24DF6F5B00C8C5A3 /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E7BED24DF6F5B00C8C5A3 /* VideoViewController.xib */; };
+		D51E7BF224DF6F6900C8C5A3 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7BF024DF6F6900C8C5A3 /* MyPageViewController.swift */; };
+		D51E7BF324DF6F6900C8C5A3 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E7BF124DF6F6900C8C5A3 /* MyPageViewController.xib */; };
+		D51E7BF624DF6F7A00C8C5A3 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7BF424DF6F7A00C8C5A3 /* NotificationsViewController.swift */; };
+		D51E7BF724DF6F7A00C8C5A3 /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E7BF524DF6F7A00C8C5A3 /* NotificationsViewController.xib */; };
+		D51E7BFA24DF6F9500C8C5A3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7BF824DF6F9500C8C5A3 /* MenuViewController.swift */; };
+		D51E7BFB24DF6F9500C8C5A3 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E7BF924DF6F9500C8C5A3 /* MenuViewController.xib */; };
+		D51E7BFE24DF78E200C8C5A3 /* BaseChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7BFD24DF78E200C8C5A3 /* BaseChildViewController.swift */; };
+		D5C51BF024DE93C90073217F /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C51BEE24DE93C90073217F /* DefaultViewController.swift */; };
+		D5C51BF124DE93C90073217F /* DefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C51BEF24DE93C90073217F /* DefaultViewController.xib */; };
 		D5E1029624DE8D0E00155373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E1029524DE8D0E00155373 /* AppDelegate.swift */; };
 		D5E1029824DE8D0E00155373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E1029724DE8D0E00155373 /* SceneDelegate.swift */; };
 		D5E1029A24DE8D0E00155373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E1029924DE8D0E00155373 /* ViewController.swift */; };
@@ -22,8 +33,19 @@
 /* Begin PBXFileReference section */
 		7744539342615607B8B68BC9 /* Pods-clone-facebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clone-facebook.release.xcconfig"; path = "Target Support Files/Pods-clone-facebook/Pods-clone-facebook.release.xcconfig"; sourceTree = "<group>"; };
 		CD59DF70912A3FE671DF6721 /* Pods-clone-facebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clone-facebook.debug.xcconfig"; path = "Target Support Files/Pods-clone-facebook/Pods-clone-facebook.debug.xcconfig"; sourceTree = "<group>"; };
-		D5C51BEE24DE93C90073217F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D5C51BEF24DE93C90073217F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D51E7BE424DF6EAA00C8C5A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D51E7BE524DF6EAA00C8C5A3 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D51E7BEC24DF6F5B00C8C5A3 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		D51E7BED24DF6F5B00C8C5A3 /* VideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
+		D51E7BF024DF6F6900C8C5A3 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		D51E7BF124DF6F6900C8C5A3 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageViewController.xib; sourceTree = "<group>"; };
+		D51E7BF424DF6F7A00C8C5A3 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		D51E7BF524DF6F7A00C8C5A3 /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
+		D51E7BF824DF6F9500C8C5A3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D51E7BF924DF6F9500C8C5A3 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		D51E7BFD24DF78E200C8C5A3 /* BaseChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChildViewController.swift; sourceTree = "<group>"; };
+		D5C51BEE24DE93C90073217F /* DefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewController.swift; sourceTree = "<group>"; };
+		D5C51BEF24DE93C90073217F /* DefaultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultViewController.xib; sourceTree = "<group>"; };
 		D5E1029224DE8D0E00155373 /* clone-facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "clone-facebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E1029524DE8D0E00155373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5E1029724DE8D0E00155373 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,14 +87,67 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		D5C51BEA24DE936A0073217F /* Home */ = {
+		D51E7BE324DF6E9300C8C5A3 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				D51E7BE424DF6EAA00C8C5A3 /* HomeViewController.swift */,
+				D51E7BE524DF6EAA00C8C5A3 /* HomeViewController.xib */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		D51E7BE824DF6EB900C8C5A3 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				D51E7BEC24DF6F5B00C8C5A3 /* VideoViewController.swift */,
+				D51E7BED24DF6F5B00C8C5A3 /* VideoViewController.xib */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		D51E7BE924DF6EC100C8C5A3 /* mypage */ = {
+			isa = PBXGroup;
+			children = (
+				D51E7BF024DF6F6900C8C5A3 /* MyPageViewController.swift */,
+				D51E7BF124DF6F6900C8C5A3 /* MyPageViewController.xib */,
+			);
+			path = mypage;
+			sourceTree = "<group>";
+		};
+		D51E7BEA24DF6EE400C8C5A3 /* notifications */ = {
+			isa = PBXGroup;
+			children = (
+				D51E7BF424DF6F7A00C8C5A3 /* NotificationsViewController.swift */,
+				D51E7BF524DF6F7A00C8C5A3 /* NotificationsViewController.xib */,
+			);
+			path = notifications;
+			sourceTree = "<group>";
+		};
+		D51E7BEB24DF6EEE00C8C5A3 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				D51E7BF824DF6F9500C8C5A3 /* MenuViewController.swift */,
+				D51E7BF924DF6F9500C8C5A3 /* MenuViewController.xib */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		D51E7BFC24DF78D100C8C5A3 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				D51E7BFD24DF78E200C8C5A3 /* BaseChildViewController.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		D5C51BEA24DE936A0073217F /* default */ = {
 			isa = PBXGroup;
 			children = (
 				D5C51BED24DE937A0073217F /* ViewModels */,
 				D5C51BEC24DE93740073217F /* Views */,
 				D5C51BEB24DE93700073217F /* Models */,
 			);
-			path = Home;
+			path = default;
 			sourceTree = "<group>";
 		};
 		D5C51BEB24DE93700073217F /* Models */ = {
@@ -85,8 +160,8 @@
 		D5C51BEC24DE93740073217F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D5C51BEE24DE93C90073217F /* HomeViewController.swift */,
-				D5C51BEF24DE93C90073217F /* HomeViewController.xib */,
+				D5C51BEE24DE93C90073217F /* DefaultViewController.swift */,
+				D5C51BEF24DE93C90073217F /* DefaultViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +194,7 @@
 		D5E1029424DE8D0E00155373 /* clone-facebook */ = {
 			isa = PBXGroup;
 			children = (
+				D51E7BFC24DF78D100C8C5A3 /* base */,
 				D5E102AE24DE8D2400155373 /* Scenes */,
 				D5E102AD24DE8D1E00155373 /* Resources */,
 				D5E102AC24DE8D1500155373 /* Supports File */,
@@ -150,7 +226,12 @@
 		D5E102AE24DE8D2400155373 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D5C51BEA24DE936A0073217F /* Home */,
+				D51E7BEB24DF6EEE00C8C5A3 /* menu */,
+				D51E7BEA24DF6EE400C8C5A3 /* notifications */,
+				D51E7BE924DF6EC100C8C5A3 /* mypage */,
+				D51E7BE824DF6EB900C8C5A3 /* video */,
+				D51E7BE324DF6E9300C8C5A3 /* home */,
+				D5C51BEA24DE936A0073217F /* default */,
 				D5E1029924DE8D0E00155373 /* ViewController.swift */,
 			);
 			path = Scenes;
@@ -216,10 +297,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51E7BF324DF6F6900C8C5A3 /* MyPageViewController.xib in Resources */,
+				D51E7BF724DF6F7A00C8C5A3 /* NotificationsViewController.xib in Resources */,
 				D5E102A524DE8D0E00155373 /* LaunchScreen.storyboard in Resources */,
 				D5E102A224DE8D0E00155373 /* Assets.xcassets in Resources */,
+				D51E7BFB24DF6F9500C8C5A3 /* MenuViewController.xib in Resources */,
+				D51E7BEF24DF6F5B00C8C5A3 /* VideoViewController.xib in Resources */,
+				D51E7BE724DF6EAA00C8C5A3 /* HomeViewController.xib in Resources */,
 				D5E1029D24DE8D0E00155373 /* Main.storyboard in Resources */,
-				D5C51BF124DE93C90073217F /* HomeViewController.xib in Resources */,
+				D5C51BF124DE93C90073217F /* DefaultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +358,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C51BF024DE93C90073217F /* HomeViewController.swift in Sources */,
+				D51E7BF624DF6F7A00C8C5A3 /* NotificationsViewController.swift in Sources */,
+				D51E7BFE24DF78E200C8C5A3 /* BaseChildViewController.swift in Sources */,
+				D51E7BFA24DF6F9500C8C5A3 /* MenuViewController.swift in Sources */,
+				D5C51BF024DE93C90073217F /* DefaultViewController.swift in Sources */,
+				D51E7BEE24DF6F5B00C8C5A3 /* VideoViewController.swift in Sources */,
 				D5E1029A24DE8D0E00155373 /* ViewController.swift in Sources */,
 				D5E102A024DE8D0E00155373 /* clone_facebook.xcdatamodeld in Sources */,
 				D5E1029624DE8D0E00155373 /* AppDelegate.swift in Sources */,
 				D5E1029824DE8D0E00155373 /* SceneDelegate.swift in Sources */,
+				D51E7BE624DF6EAA00C8C5A3 /* HomeViewController.swift in Sources */,
+				D51E7BF224DF6F6900C8C5A3 /* MyPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
