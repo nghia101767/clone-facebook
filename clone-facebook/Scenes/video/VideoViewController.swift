@@ -9,5 +9,8 @@
 import UIKit
 
 class VideoViewController: BaseChildViewController {
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = .red
+    }
 }

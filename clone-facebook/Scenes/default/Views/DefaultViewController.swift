@@ -80,7 +80,7 @@ class DefaultViewController: UIViewController {
 extension DefaultViewController: UIPageViewControllerDataSource{
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        var index = currentViewControllerIndex
+        var index = currentViewControllerIndex - 1
         if currentViewControllerIndex == 0{
             index=viewControllers.count-1
         }
@@ -88,7 +88,7 @@ extension DefaultViewController: UIPageViewControllerDataSource{
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        var index = currentViewControllerIndex
+        var index = currentViewControllerIndex + 1
         if currentViewControllerIndex == viewControllers.count-1{
             index = 0
         }
@@ -133,6 +133,7 @@ extension DefaultViewController: DefaultMenuDelegate{
         currentViewControllerIndex = cell.index
         reloadMenu(oldIndex)
         reloadMenu(currentViewControllerIndex)
+        pageViewController.setViewControllers([viewControllers[currentViewControllerIndex]], direction: .forward, animated: false, completion: nil)
         if cell.index == 0 {
             self.marginTopHeader.constant = 0.0
             self.header.isHidden = false
