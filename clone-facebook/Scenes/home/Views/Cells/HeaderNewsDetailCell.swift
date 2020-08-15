@@ -12,8 +12,8 @@ protocol HeaderFriendDetailProtocol{
     
 }
 
-class HeaderFriendDetailCell: UICollectionViewCell {
-    static let identifier = "HeaderFriendDetailCell"
+class HeaderNewsDetailCell: UICollectionViewCell {
+    static let identifier = "HeaderNewsDetailCell"
     
     var delegate: HeaderFriendDetailProtocol?
     
@@ -21,6 +21,6 @@ class HeaderFriendDetailCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     static func loadView() -> UINib{
-        return UINib(nibName: HeaderFriendDetailCell.identifier, bundle: nil)
+        return UINib(nibName: HeaderNewsDetailCell.identifier, bundle: nil)
     }
 }

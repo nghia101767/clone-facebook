@@ -11,6 +11,7 @@ import UIKit
 class HomeViewController: BaseChildViewController {
 
     @IBOutlet weak var tableHome: UITableView!
+    var collectionFriend: UICollectionView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,7 @@ class HomeViewController: BaseChildViewController {
     func initTableView() {
         self.tableHome.register(HeaderCreatePostCell.loadView(), forCellReuseIdentifier: HeaderCreatePostCell.identifier)
         
-        self.tableHome.register(HeaderFriendCell.loadView(), forCellReuseIdentifier: HeaderFriendCell.identifier)
+        self.tableHome.register(HomeNewsCell.loadView(), forCellReuseIdentifier: HomeNewsCell.identifier)
             
         self.tableHome.tableFooterView = UIView()
         
@@ -50,9 +51,13 @@ extension HomeViewController: UITableViewDataSource{
             let cell = tableView.dequeueReusableCell(withIdentifier: HeaderCreatePostCell.identifier, for: indexPath) as! HeaderCreatePostCell
             
             return cell
-        case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: HeaderFriendCell.identifier, for: indexPath) as! HeaderFriendCell
-            cell.configuration(dataSource: self)
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeNewsCell.identifier, for: indexPath) as! HomeNewsCell
+            cell.configuration { (collectionView) in
+                self.collectionFriend = collectionView
+                self.collectionFriend?.delegate = self
+                self.collectionFriend?.dataSource = self
+            }
             return cell
         default:
             return UITableViewCell()
@@ -63,12 +68,15 @@ extension HomeViewController: UITableViewDataSource{
 }
 extension HomeViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        if collectionView == collectionFriend {
+            return 10
+        }
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: HeaderFriendDetailCell.identifier, for: indexPath) as? HeaderFriendDetailCell
+        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: HeaderNewsDetailCell.identifier, for: indexPath) as? HeaderNewsDetailCell
         if cell != nil {
             return cell!
         }
@@ -76,5 +84,9 @@ extension HomeViewController: UICollectionViewDataSource{
         return UICollectionViewCell()
     }
     
+    
+}
+
+extension HomeViewController: UICollectionViewDelegate{
     
 }

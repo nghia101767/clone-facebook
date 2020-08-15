@@ -74,6 +74,7 @@ class DefaultViewController: UIViewController {
         self.body.addSubview(self.pageViewController.view)
         self.addChild(pageViewController)
         self.pageViewController.didMove(toParent: self)
+        self.pageViewController.isPagingEnabled = false
     }
 }
 

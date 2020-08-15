@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17147" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17120"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderNewsDetailCell" customModule="clone_facebook" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderNewsDetailCell" id="gTV-IL-0wX" customClass="HeaderNewsDetailCell" customModule="clone_facebook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="157" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5j-82-bqm" customClass="View" customModule="clone_facebook" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="157" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo" translatesAutoresizingMaskIntoConstraints="NO" id="d4T-Ks-hBH" userLabel="bg" customClass="ImageView" customModule="clone_facebook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="157" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSt-un-fVl" userLabel="box avatar" customClass="View" customModule="clone_facebook" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="45" height="45"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="ii4-XV-Jsw" userLabel="avatar" customClass="ImageView" customModule="clone_facebook" customModuleProvider="target">
+                                        <rect key="frame" x="6.5" y="6.5" width="32" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="29Q-3D-bxq"/>
+                                            <constraint firstAttribute="height" constant="32" id="fwD-bl-wvE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemBlueColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ii4-XV-Jsw" firstAttribute="centerX" secondItem="TSt-un-fVl" secondAttribute="centerX" id="4LC-OI-4Ng"/>
+                                    <constraint firstAttribute="width" constant="45" id="Bd8-kh-cca"/>
+                                    <constraint firstAttribute="width" secondItem="TSt-un-fVl" secondAttribute="height" id="Fn9-Uq-sD7"/>
+                                    <constraint firstItem="ii4-XV-Jsw" firstAttribute="centerY" secondItem="TSt-un-fVl" secondAttribute="centerY" id="WIG-Vr-xWh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TSt-un-fVl" firstAttribute="top" secondItem="w5j-82-bqm" secondAttribute="top" constant="10" id="55a-n2-hOs"/>
+                            <constraint firstAttribute="trailing" secondItem="d4T-Ks-hBH" secondAttribute="trailing" id="ZaU-nh-QT3"/>
+                            <constraint firstItem="d4T-Ks-hBH" firstAttribute="leading" secondItem="w5j-82-bqm" secondAttribute="leading" id="e4j-vT-EXC"/>
+                            <constraint firstAttribute="height" constant="200" id="kvU-e8-ZQ7"/>
+                            <constraint firstItem="TSt-un-fVl" firstAttribute="leading" secondItem="w5j-82-bqm" secondAttribute="leading" constant="10" id="lrN-4F-TcR"/>
+                            <constraint firstItem="d4T-Ks-hBH" firstAttribute="top" secondItem="w5j-82-bqm" secondAttribute="top" id="rsr-CR-r4R"/>
+                            <constraint firstAttribute="bottom" secondItem="d4T-Ks-hBH" secondAttribute="bottom" id="z7U-tX-akv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="w5j-82-bqm" secondAttribute="trailing" id="GTt-pw-IyB"/>
+                <constraint firstItem="w5j-82-bqm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="N85-bw-CQB"/>
+                <constraint firstItem="w5j-82-bqm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dbI-Zl-Jrk"/>
+            </constraints>
+            <size key="customSize" width="157" height="200"/>
+            <point key="canvasLocation" x="215.21739130434784" y="115.17857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="d4T-Ks-hBH">
+            <size key="intrinsicContentSize" width="280" height="378"/>
+        </designable>
+        <designable name="ii4-XV-Jsw">
+            <size key="intrinsicContentSize" width="512" height="512"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="demo" width="280" height="378"/>
+        <image name="profile" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

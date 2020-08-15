@@ -19,4 +19,24 @@ class View: UIView{
             layer.cornerRadius = newValue
         }
     }
+    @IBInspectable
+    var border: CGFloat{
+        get{
+            return self.layer.borderWidth
+        }
+        set{
+            self.layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable
+    var borderColor: UIColor?{
+        get{
+            return self.borderColor
+        }
+        set{
+            guard let color = newValue else { return }
+            self.layer.borderColor = color.cgColor
+        }
+    }
 }

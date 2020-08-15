@@ -11,9 +11,14 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    let services: [UIApplicationDelegate] = [
+        IQKeyboardService()
+    ]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        for service in services{
+            let _ = service.application?(application, willFinishLaunchingWithOptions: launchOptions)
+        }
         return true
     }
 
